@@ -9,39 +9,12 @@ Suite Teardown     Close All Browsers
 Test Template      Example Test
 
 *** Test Cases ***
-Example Test with ${Last Name} ${Mobile} ${Company}
-
-*** Keywords ***
-Example Test
-    [Arguments]    ${Last Name}                ${Mobile}                   ${Company}                ${Salutation}
-    # Your tests here, this is just an example
-    # just use the values from excel using variable names
-    # ClickText    ${Last Name}
-    # VerifyText                               ${Mobile}
-    # VerifyText                               ${Company}
-    # VerifyText                               ${Salutation}
-
-
-
-----------------------------------------------
-*** Settings ***
-
-Documentation      Suite to create Lead and Account
-# Library          QForce
-Library            QWeb
-Library            String
-Library            DateTime
-Suite Setup        Setup Suite
-Suite Teardown     QWeb.Close All Browsers
-Resource           ../resources/common.robot
-
-*** Test Cases ***
 Entering A Lead With Data with ${First Name} ${Last Name}    ${Phone}    ${Company}    ${Website}
     [Tags]         AllData
 
 *** Keywords ***
 Entering A Lead With Data
-    [Arguments]    ${First Name}               ${Last Name}                ${Phone}                  ${Company}       ${Website}
+    [Arguments]    ${First Name}               ${Last Name}                ${Phone}                  ${Company}    ${Website}
     [tags]         Lead
     Home
     LaunchApp      Sales
