@@ -32,7 +32,7 @@ Entering A Lead With Data
     # Delete the lead to clean up data
     LaunchApp              Sales
     ClickText              Leads
-    VerifyText             My Leads                    timeout=120s
+    VerifyText             Recently Viewed             timeout=120s
 
     ClickText              ${First Name}${Last Name}
     ClickText              Show more actions
