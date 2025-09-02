@@ -5,12 +5,12 @@ Suite Setup                   Setup Suite
 Test Template                 Entering A Lead With Data
 
 *** Test Cases ***
-Entering A Lead With Data with ${First Name} ${Last Name}    ${Phone}    ${Company}    ${Website}
+Entering A Lead With Data with ${First Name} ${Last Name}    ${Mobile}    ${Company}    ${Website}
     [Tags]                    AllData
 
 *** Keywords ***
 Entering A Lead With Data
-    [Arguments]               ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
+    [Arguments]               ${First Name}    ${Last Name}    ${Mobile}    ${Company}    ${Website}
     [tags]                    Lead
     Home
     LaunchApp                 Sales
@@ -24,7 +24,7 @@ Entering A Lead With Data
     TypeText                  First Name                  ${First Name}
     TypeText                  Last Name                   ${Last Name}
     Picklist                  Lead Status                 Working - Contacted
-    TypeText                  Phone                       ${Phone}                    First Name
+    TypeText                  Phone                       ${Mobile}                    First Name
     TypeText                  Company                     ${Company}                  Last Name
     TypeText                  Website                     ${Website}
 
