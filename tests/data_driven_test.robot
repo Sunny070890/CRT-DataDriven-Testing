@@ -13,7 +13,7 @@ Entering A Lead With Data
     [Arguments]               ${First Name}    ${Last Name}    ${Mobile}    ${Company}    ${Website}
     [tags]                    Lead
     # Home
-    LaunchApp                 Sales
+    Login To SF Dev Org
 
     ClickText                 Leads
     VerifyText                My Leads             timeout=120s
