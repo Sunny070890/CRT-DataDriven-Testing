@@ -19,7 +19,7 @@ Entering A Lead With Data
     ClickText              New
     UseModal               On
     PickList               Salutation                  Mr.
-    TypeText               First Name                  ${Last Name}
+    TypeText               First Name                  ${First Name}
     TypeText               *Company                    ${Company}
     TypeText               Last Name                   ${Last Name}
     TypeText               Mobile                      ${Mobile}
