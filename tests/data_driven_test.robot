@@ -34,7 +34,7 @@ Entering A Lead With Data
     ClickText              Leads
     VerifyText             Recently Viewed             timeout=120s
 
-    ClickText              ${First Name}${Last Name}
+    ClickText              ${First Name} ${Last Name}
     ClickText              Show more actions
     ClickText              Delete
     UseModal               On
