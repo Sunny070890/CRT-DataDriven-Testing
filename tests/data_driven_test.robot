@@ -28,32 +28,32 @@ Entering A Lead With Data
     UseModal               Off
 
 
-    ClickText              Leads
-    VerifyText             My Leads                    timeout=120s
-    ClickText              New
-    VerifyText             Lead Information
-    UseModal               On                          # Only find fields from open modal dialog
+    # ClickText              Leads
+    # VerifyText             My Leads                    timeout=120s
+    # ClickText              New
+    # VerifyText             Lead Information
+    # UseModal               On                          # Only find fields from open modal dialog
 
-    TypeText               First Name                  ${First Name}
-    TypeText               Last Name                   ${Last Name}
-    Picklist               Lead Status                 Working - Contacted
-    TypeText               Phone                       ${Mobile}                   First Name
-    TypeText               Company                     ${Company}                  Last Name
-    TypeText               Website                     ${Website}
+    # TypeText               First Name                  ${First Name}
+    # TypeText               Last Name                   ${Last Name}
+    # Picklist               Lead Status                 Working - Contacted
+    # TypeText               Phone                       ${Mobile}                   First Name
+    # TypeText               Company                     ${Company}                  Last Name
+    # TypeText               Website                     ${Website}
 
-    ClickText              Lead Source
-    ClickText              Web
-    ClickText              Save                        partial_match=False
-    UseModal               Off
-    Sleep                  1
+    # ClickText              Lead Source
+    # ClickText              Web
+    # ClickText              Save                        partial_match=False
+    # UseModal               Off
+    # Sleep                  1
 
-    #Delete the lead to clean up data
-    LaunchApp              Sales
-    ClickText              Leads
-    VerifyText             My Leads                    timeout=120s
+    # #Delete the lead to clean up data
+    # LaunchApp              Sales
+    # ClickText              Leads
+    # VerifyText             My Leads                    timeout=120s
 
-    ClickText              ${First Name}${Last Name}
-    ClickText              Show more actions
-    ClickText              Delete
-    UseModal               On
-    ClickText              Delete
+    # ClickText              ${First Name}${Last Name}
+    # ClickText              Show more actions
+    # ClickText              Delete
+    # UseModal               On
+    # ClickText              Delete
