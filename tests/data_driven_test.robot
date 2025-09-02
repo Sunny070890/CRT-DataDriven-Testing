@@ -1,4 +1,30 @@
 *** Settings ***
+Library                         QWeb
+Library                         DataDriver                  reader_class=TestDataApi    name=MOCK_DATA__1_.csv
+Library                         String
+Library                         DateTime
+Resource                        ../resources/common.robot
+Suite Setup                     Open Browser                about:blank                 Chrome
+Suite Teardown                  Close All Browsers
+Test Template                   Example Test
+
+*** Test Cases ***
+Example Test with ${Last Name} ${Mobile} ${Company}
+
+*** Keywords ***
+Example Test
+    [Arguments]                 ${Last Name}                ${Mobile}                   ${Company}                ${Salutation}
+    # Your tests here, this is just an example
+    # just use the values from excel using variable names
+    # ClickText                 ${Last Name}
+    # VerifyText                ${Mobile}
+    # VerifyText                ${Company}
+    # VerifyText                ${Salutation}
+
+
+
+----------------------------------------------
+*** Settings ***
 
 Documentation                   Suite to create Lead and Account
 # Library                       QForce
